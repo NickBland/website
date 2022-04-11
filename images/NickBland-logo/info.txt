@@ -1,0 +1,11 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: kelson_rg
+font link: http://www.fontfabric.com/kelson-sans/
+font author: Bruno Mello
+font author site: http://www.myfonts.com/person/Bruno_Mello/
+
+
+{"bg":"#FCF2F7","icon-gradient-0":"#D418EA","icon-gradient-1":"#ECD062","font":"#321926","slogan":"#462d3a"}
+      
