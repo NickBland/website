@@ -23,7 +23,8 @@ module.exports = {
           500: '#FFCF4C',
           600: '#F9F871',
         },
-      }
+      },
+      display: ['dark'],
     },
   },
   plugins: [],
