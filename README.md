@@ -1,6 +1,6 @@
-# Main-Website-Content
+# Website-2.0
 
-> An overall small project I plan to do to reface my current website
+> A project to reface my old website.
 
 ## Aim of Project
 

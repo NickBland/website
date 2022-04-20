@@ -1,0 +1,42 @@
+variables:
+  DOCKER_BUILDKIT: 1
+  IMAGE_DEPENDANCY: $CI_REGISTRY/dependancy:latest
+  IMAGE_BUILD: $CI_REGISTRY/builder:latest
+  IMAGE_DEPLOY: $CI_REGISTRY/deploy:latest
+  IMAGE_FINAL: $CI_REGISTRY/website:latest
+
+stages:
+  - build
+  - test
+  - deploy
+
+# Run docker stuff before each stage to log into built in container registry and confirm version
+.base:
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script:
+    - docker --version
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+
+build:builder:
+  extends: .base
+  stage: build
+  script:
+    - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from "$IMAGE_DEPENDANCY" --target dependancies -t "$IMAGE_TEST"
+    - docker push "$IMAGE_DEPENDANCY"
+
+test:linter:
+  extends: .base
+  stage: test
+  needs: ["build:builder"]
+  script:
+    - docker run lint
+
+deploy: 
+  extends: .base
+  stage: deploy
+  needs: ["test:linter"]
+  script:
+    - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from "$IMAGE_DEPENDANCY" --cache-from "$IMAGE_DEPLOY" --cache-from "$IMAGE_BUILD" -t "$IMAGE_DEPLOY" .
+    - docker push "$IMAGE_FINAL"
