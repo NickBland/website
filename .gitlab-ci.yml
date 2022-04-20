@@ -4,6 +4,7 @@ variables:
   IMAGE_BUILD: $CI_REGISTRY/builder:latest
   IMAGE_DEPLOY: $CI_REGISTRY/deploy:latest
   IMAGE_FINAL: $CI_REGISTRY/website:latest
+  DOCKER_TLS_CERTDIR: "/certs"
 
 stages:
   - build
