@@ -32,7 +32,7 @@ build:sourceCode:
   stage: build
   script:
     - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from "$IMAGE_DEPENDANCY" --cache-from "$IMAGE_BUILD" --target builder -t "$IMAGE_BUILD" .
-    - docker push "$IMAGE_DEPENDANCY"   
+    - docker push "$IMAGE_BUILD"   
 
 ## ADD TEST CASES BELOW ##
 test:linter:
@@ -48,5 +48,5 @@ deploy:
   stage: deploy
   needs: ["test:linter"]
   script:
-    - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from "$IMAGE_DEPENDANCY" --cache-from "$IMAGE_BUILD" -t "$IMAGE_DEPLOY" .
+    - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from "$IMAGE_DEPENDANCY" --cache-from "$IMAGE_BUILD" -t "$IMAGE_FINAL" .
     - docker push "$IMAGE_FINAL"
