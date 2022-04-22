@@ -1,9 +1,9 @@
 variables:
   DOCKER_BUILDKIT: 1
-  IMAGE_DEPENDANCY: $CI_REGISTRY/dependancy:latest
-  IMAGE_BUILD: $CI_REGISTRY/builder:latest
-  IMAGE_DEPLOY: $CI_REGISTRY/deploy:latest
-  IMAGE_FINAL: $CI_REGISTRY/website:latest
+  IMAGE_DEPENDANCY: registry.nickbland.dev/nickbland/website-2/dependancy:latest
+  IMAGE_BUILD: registry.nickbland.dev/nickbland/website-2/builder:latest
+  IMAGE_DEPLOY: registry.nickbland.dev/nickbland/website-2/deploy:latest
+  IMAGE_FINAL: registry.nickbland.dev/nickbland/website-2/website:latest
   DOCKER_TLS_CERTDIR: "/certs"
 
 stages:
