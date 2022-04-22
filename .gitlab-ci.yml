@@ -2,7 +2,6 @@ variables:
   DOCKER_BUILDKIT: 1
   IMAGE_DEPENDANCY: registry.nickbland.dev/nickbland/website-2/dependancy:latest
   IMAGE_BUILD: registry.nickbland.dev/nickbland/website-2/builder:latest
-  IMAGE_DEPLOY: registry.nickbland.dev/nickbland/website-2/deploy:latest
   IMAGE_FINAL: registry.nickbland.dev/nickbland/website-2/website:latest
   DOCKER_TLS_CERTDIR: "/certs"
 
@@ -32,7 +31,7 @@ test:linter:
   stage: test
   needs: ["build:builder"]
   script:
-    - docker run lint
+    - docker run "$IMAGE_BUILD" npm run lint
 
 deploy: 
   extends: .base
