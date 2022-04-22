@@ -19,6 +19,7 @@ stages:
     - docker --version
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_JOB_TOKEN" "$CI_REGISTRY/$CI_PROJECT_PATH"
 
+# Create initial test cases below
 build:builder:
   extends: .base
   stage: build
@@ -26,6 +27,14 @@ build:builder:
     - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from "$IMAGE_DEPENDANCY" --target dependancies -t "$IMAGE_DEPENDANCY" .
     - docker push "$IMAGE_DEPENDANCY"
 
+build:sourceCode:
+  extends: .base
+  stage: build
+  script:
+    - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from "$IMAGE_DEPENDANCY" --cache-from "$IMAGE_BUILD" --target builder -t "$IMAGE_BUILD" .
+    - docker push "$IMAGE_DEPENDANCY"   
+
+## ADD TEST CASES BELOW ##
 test:linter:
   extends: .base
   stage: test
@@ -33,10 +42,11 @@ test:linter:
   script:
     - docker run "$IMAGE_BUILD" npm run lint
 
+# Create final minified image of production code
 deploy: 
   extends: .base
   stage: deploy
   needs: ["test:linter"]
   script:
-    - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from "$IMAGE_DEPENDANCY" --cache-from "$IMAGE_DEPLOY" --cache-from "$IMAGE_BUILD" -t "$IMAGE_DEPLOY" .
+    - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from "$IMAGE_DEPENDANCY" --cache-from "$IMAGE_BUILD" -t "$IMAGE_DEPLOY" .
     - docker push "$IMAGE_FINAL"
