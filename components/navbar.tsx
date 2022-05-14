@@ -25,11 +25,11 @@ const NavBar = ({children, title = "nickbland.dev | Home", description = "A webs
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <header>
-                <Disclosure as="nav" className="dark:bg-white bg-black">
+                <Disclosure as="nav" className="dark:bg-black bg-white">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="flex items-center justify-between h-16">
                             <div className="flex items-center">
-                                <div className="flex-shrink-0 dark:hidden block">
+                                <div className="flex-shrink-0 hidden dark:block">
                                     <Image
                                         className=""
                                         src="/logo-white.svg"
@@ -38,7 +38,7 @@ const NavBar = ({children, title = "nickbland.dev | Home", description = "A webs
                                         width={100}
                                     />
                                 </div>
-                                <div className="flex-shrink-0 hidden dark:block">
+                                <div className="flex-shrink-0 dark:hidden block">
                                     <Image
                                         className=""
                                         src="/logo-black.svg"
@@ -49,8 +49,8 @@ const NavBar = ({children, title = "nickbland.dev | Home", description = "A webs
                                 </div>
                                 <div className="hidden md:block">
                                     <div className="ml-10 flex items-baseline space-x-4">
-                                        <Link href="/"><a className="dark:text-black text-white">Home</a></Link>
-                                        <Link href="/"><a className="dark:text-black text-white">Home 2</a></Link>
+                                        <Link href="/"><a className="dark:text-white text-black">Home</a></Link>
+                                        <Link href="/"><a className="dark:text-white text-black">About</a></Link>
                                     </div>
                                     <div className="flex items-center justify-center mx-auto absolute top-5 right-0 left-1/3">
                                         <ThemeSwitch></ThemeSwitch>
@@ -86,9 +86,9 @@ const NavBar = ({children, title = "nickbland.dev | Home", description = "A webs
                     >
                         <div id="mobile-menu">
                             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                                <Link href="/"><a className="dark:text-black text-white px-3 py-2 rounded-md text-sm font-medium block">Home</a></Link>
-                                <Link href="/"><a className="dark:text-black text-white px-3 py-2 rounded-md text-sm font-medium block">Home 2</a></Link>
-                                <ThemeSwitch></ThemeSwitch>
+                                <Link href="/"><a className="dark:text-white text-black px-3 py-2 rounded-md text-sm font-medium block">Home</a></Link>
+                                <Link href="/"><a className="dark:text-white text-black px-3 py-2 rounded-md text-sm font-medium block">About</a></Link>
+                                <div className="py-1 px-3"><ThemeSwitch></ThemeSwitch></div>
                             </div>
                         </div>
                     </Transition.Child>

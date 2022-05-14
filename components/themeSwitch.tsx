@@ -14,17 +14,17 @@ export const ThemeSwitch = () => {
     }
 
     return (
-        <div className="flex justify-end items-center space-x-2 mx-auto relative">
+        <div className="flex justify-start md:justify-end items-center space-x-2 mx-auto relative">
             <Switch.Group>
                 <div className="flex items-center">
-                    <Switch.Label className="mr-3 dark:text-black text-white">Dark Mode</Switch.Label>
+                    <Switch.Label className="mr-3 dark:text-white text-black">Dark Mode</Switch.Label>
                     <Switch
                         checked={enabled}
                         onChange={setEnabled}
-                        className={`${enabled ? 'bg-gray-200' : 'bg-gray-400'} relative inline-flex items-center h-6 rounded-full w-11 transition-colors focus:outline-none focus:ring-1 focus:ring-offset-2 dark:ring-black ring-white dark:focus:bg-gray-200 focus:bg-gray-400`}
+                        className={`${enabled ? 'bg-gray-400' : 'bg-gray-200'} relative inline-flex items-center h-6 rounded-full w-11 transition-colors focus:outline-none focus:ring-1 focus:ring-offset-2 dark:ring-white ring-black dark:focus:bg-gray-400 focus:bg-gray-400`}
                     >
                         <span
-                            className={`${enabled ? 'translate-x-6' : 'translate-x-1'} inline-block w-4 h-4 transform bg-white dark:bg-black rounded-full transition-transform`} />
+                            className={`${enabled ? 'translate-x-6' : 'translate-x-1'} inline-block w-4 h-4 transform bg-black dark:bg-white rounded-full transition-transform`} />
                     </Switch>
                 </div>
             </Switch.Group>
