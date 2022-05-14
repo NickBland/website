@@ -1,5 +1,6 @@
 import type {NextPage} from 'next';
 import NavBar from "../components/navbar";
+import {Footer} from "../components/footer"
 
 const Home: NextPage = () => {
     return (
@@ -7,9 +8,13 @@ const Home: NextPage = () => {
             <NavBar title="Home | nickbland.dev"></NavBar>
 
             <main className="">
-                <h1>Test Comment</h1>
+                {/* MAIN BANNER SECTION BELOW */}
+                <div className="">
+
+                </div>
                 
             </main>
+            <Footer></Footer>   
         </div>
   )
 }
