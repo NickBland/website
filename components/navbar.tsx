@@ -1,6 +1,6 @@
 import React, {Fragment, ReactNode, useState} from "react";
 import {Disclosure, Transition} from "@headlessui/react";
-import {XIcon, MenuIcon} from "@heroicons/react/outline"
+import {HiX, HiMenu} from "react-icons/hi"
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
@@ -65,9 +65,9 @@ const NavBar = ({children, title = "nickbland.dev | Home", description = "A webs
                                 >
                                     <span className="sr-only">Open Mobile Menu</span>
                                     {!isOpen ? (
-                                        <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                                        <HiMenu className="block h-6 w-6" aria-hidden="true" />
                                     ) : (
-                                        <XIcon className="block h-6 w-6" aria-hidden="true" />
+                                        <HiX className="block h-6 w-6" aria-hidden="true" />
                                     )}
                                 </button>
                             </div>
