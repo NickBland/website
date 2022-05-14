@@ -11,9 +11,9 @@ export const Footer = () => {
                     <Link href="/"><a className="link link-hover">Home 3</a></Link>
                 </div>
                 <div>
-                    <div className="grid grid-flow-col gap-4">
-                        <Link href="/"><a><IoLogoGithub></IoLogoGithub></a></Link>
-                        <Link href="/"><a><IoLogoGitlab></IoLogoGitlab></a></Link>
+                <div className="grid grid-flow-col gap-4">
+                    <Link href="https://github.com/NickBland"><a><IoLogoGithub></IoLogoGithub></a></Link>
+                    <Link href="https://git.nickbland.dev/explore"><a><IoLogoGitlab></IoLogoGitlab></a></Link>
                     </div>
                 </div>
                 <div>
