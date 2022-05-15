@@ -25,6 +25,10 @@ module.exports = {
         },
       },
       display: ['dark'],
+      backgroundImage: {
+        'splashDark': "url('/splashDarkFinal.jpg')",
+        'splashLight': "url('/splashLightFinal.jpg')",
+      },
     },
   },
   plugins: [],
