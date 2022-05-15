@@ -17,20 +17,19 @@ export const Footer = () => {
 
     return (
         <>
-            <footer className="footer grid w-full grid-flow-row place-items-center text-center gap-y-10 gap-x-4 text-sm p-10 dark:bg-black bg-white dark:text-white text-black rounded">
+            <footer className="footer grid w-full grid-flow-row place-items-center text-center gap-y-10 gap-x-4 text-sm p-10 dark:bg-black bg-white dark:text-white text-black bottom-0 max-w-full">
                 <div className="grid grid-flow-col gap-4">
                     <Link href="/"><a className="link link-hover">Home</a></Link>
                     <Link href="/"><a className="link link-hover">About</a></Link>
-                    <Link href="/"><a className="link link-hover">Home 3</a></Link>
+                    <Link href="/"><a className="link link-hover">Projects</a></Link>
                 </div>
                 <div className="grid grid-flow-col gap-4">
                     <Link href="https://github.com/NickBland"><a><IoLogoGithub></IoLogoGithub></a></Link>
                     <Link href="https://git.nickbland.dev/explore"><a><IoLogoGitlab></IoLogoGitlab></a></Link>
-                </div>
-                <div className="grid grid-flow-col gap-4"> 
-                    <SiBitcoin onClick={() => {setIsOpen(true); setCoin("Bitcoin")}} className="hover:text-orange-300 hover:cursor-pointer"></SiBitcoin>
-                    <SiEthereum onClick={() => {setIsOpen(true); setCoin("Ethereum")}} className="hover:text-blue-400 hover:cursor-pointer"></SiEthereum>
-                    <SiMonero onClick={() => {setIsOpen(true); setCoin("Monero")}} className="hover:text-orange-600 hover:cursor-pointer"></SiMonero>
+                    <span className="inline-block border-l border-solid mx-0"></span>
+                    <SiBitcoin onClick={() => {setIsOpen(true); setCoin("Bitcoin")}} className="hover:text-[#F7931A] hover:cursor-pointer"></SiBitcoin>
+                    <SiEthereum onClick={() => {setIsOpen(true); setCoin("Ethereum")}} className="hover:text-[#8A93B2] hover:cursor-pointer"></SiEthereum>
+                    <SiMonero onClick={() => {setIsOpen(true); setCoin("Monero")}} className="hover:text-[#F26822] hover:cursor-pointer"></SiMonero>
                 </div>
                 <div>
                     <p>Made with ❤️ by Nick Bland</p>
