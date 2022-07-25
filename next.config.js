@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 
 module.exports = {
-  output: 'standalone'
+  output: 'standalone',
+  experimental: {
+    images: {
+      allowFutureImage: true,
+    }
+  }
 }
