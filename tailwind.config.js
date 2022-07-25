@@ -1,4 +1,5 @@
 module.exports = {
+  purge: [],
   darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -25,10 +26,12 @@ module.exports = {
         },
       },
       display: ['dark'],
-      backgroundImage: {
-        'splashDark': "url('/splashDarkFinal.jpg')",
-        'splashLight': "url('/splashLightFinal.jpg')",
-      },
+    },
+  },
+  variants: {
+    extend: { 
+      backgroundImage: ['dark'],
+      display: ['dark'],
     },
   },
   plugins: [
