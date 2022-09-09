@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { useTheme } from "next-themes";
-import { Switch } from "@headlessui/react";
+import { HiSun, HiMoon } from "react-icons/hi";
 
 export const ThemeSwitch = () => {
     const { theme, setTheme } = useTheme();
     const [enabled, setEnabled] = useState(true);
 
-    // Use theme requires its own hook which uses Strings. Using an enabled, disabled for a bool hook and following translates that to a string.
+    const handleCheck = () => {
+        setEnabled(!enabled);
+    }
+
+    // Use theme requires its own hook which uses Strings. Using an enabled, disabled for a bool hook and the following block translates that to a string.
     if (enabled) {
         setTheme("dark");
     } else {
@@ -15,7 +19,13 @@ export const ThemeSwitch = () => {
 
     return (
         <div className="flex justify-start md:justify-end items-center space-x-2 mx-auto relative">
-            <Switch.Group>
+            <label className="swap swap-rotate">
+                <input type="checkbox" checked={enabled} onChange={handleCheck}/>
+                 <HiSun className="swap-off relative inline-flex items-center w-10 h-10 text-black" />
+                 <HiMoon className="swap-on relative inline-flex items-center w-10 h-10 text-white" />
+            </label>
+
+            {/* <Switch.Group>
                 <div className="flex items-center">
                     <Switch.Label className="mr-3 dark:text-white text-black">Dark Mode</Switch.Label>
                     <Switch
@@ -27,7 +37,7 @@ export const ThemeSwitch = () => {
                             className={`${enabled ? 'translate-x-6' : 'translate-x-1'} inline-block w-4 h-4 transform bg-black dark:bg-white rounded-full transition-transform`} />
                     </Switch>
                 </div>
-            </Switch.Group>
+            </Switch.Group> */}
         </div>
     );
 };

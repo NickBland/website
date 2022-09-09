@@ -1,5 +1,4 @@
 module.exports = {
-  purge: [],
   darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
