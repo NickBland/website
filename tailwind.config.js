@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ["./index.html", "./src/**/*.{html,js,svelte,ts}"],
   theme: {
     extend: {},
@@ -8,4 +8,5 @@ export default {
   daisyui: {
     themes: ["night", "winter"],
   },
+  darkMode: "selector",
 };
