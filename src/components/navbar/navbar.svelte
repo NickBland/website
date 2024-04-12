@@ -33,8 +33,8 @@
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
-      <li><a href="/">Home</a></li>
-      <li><a href="/portfolio">Portfolio</a></li>
+      <li><a href="/" class="text-lg">Home</a></li>
+      <li><a href="/portfolio" class="text-lg">Portfolio</a></li>
     </ul>
   </div>
   <div class="navbar-end">
