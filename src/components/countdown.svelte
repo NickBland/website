@@ -35,9 +35,7 @@
 </script>
 
 <h3 class="p-5 text-4xl text-center">Time to Graduation</h3>
-<div
-  class="grid grid-flow-col gap-5 pb-5 text-center auto-cols-max justify-center"
->
+<div class="grid grid-flow-col gap-5 pb-5 text-center auto-cols-max justify-center">
   <div class="flex flex-col">
     <span class="countdown font-mono text-5xl">
       <span style="--value:{years};"></span>

@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 .height-minus-nav {
-    min-height: calc(100vh - 4.75rem);
-    /* this is the full view height - the navbar(4rem + 0.75rem padding) */
+  min-height: calc(100vh - 4.75rem);
+  /* this is the full view height - the navbar(4rem + 0.75rem padding) */
 }
