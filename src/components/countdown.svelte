@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
 
   const GRADUATION = new Date(1753797600000).valueOf();
-  let interval: NodeJS.Timer;
+  let interval: ReturnType<typeof setInterval>;
 
   let timeTo = Math.abs(GRADUATION - Date.now().valueOf()) / 1000;
 

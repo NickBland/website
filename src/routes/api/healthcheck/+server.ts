@@ -1,5 +1,3 @@
-import type { RequestHandler } from "./$types";
-
-export const GET: RequestHandler = ({ url }) => {
+export function GET() {
   return new Response();
-};
+}
