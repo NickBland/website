@@ -1,7 +1,7 @@
 <script>
   import Divider from "../../components/divider.svelte";
   import Countdown from "../../components/countdown.svelte";
-  import Carousel from "../../components/carousel.svelte";
+  import TextContent from "../../components/textContent.svelte";
 </script>
 
 <div
@@ -24,38 +24,38 @@
 </div>
 
 <h1 class="my-6 text-6xl text-center text-base-content font-bold">About Me</h1>
-<p class="p-5 mx-auto text-xl max-w-3xl">
+<TextContent>
   Since 2014, I've had an interest in programming and making things. I've made this
   portfolio as a place for me to collate and show off some of the work that I've done.
-</p>
-<p class="p-5 mx-auto text-xl max-w-3xl">
+</TextContent>
+<TextContent>
   At the moment, I've returned back to Uni to finish my degree after achieving a point in
   my career that I am happy with. With the experience I've gained, and after finishing my
   studies, my plan is to work in the cybersecurity field.
-</p>
+</TextContent>
 
 <Divider />
 
 <h1 class="my-6 text-6xl text-center text-base-content font-bold">Education & Goals</h1>
 <Countdown />
-<p class="p-5 mx-auto text-xl max-w-3xl">
+<TextContent>
   I am currently studying a Bachelor of Information Technology at Griffith University,
   opting for a no major or minor option. Having previously studied Computer Science at QUT
   from 2019-2021, I decided to take a break from study and focus on work experience. As of
   2023, I returned to studying at Griffith using the experiences I gained from both QUT
   and from work.
-</p>
-<p class="px-5 mx-auto text-xl max-w-3xl">
+</TextContent>
+<TextContent middle={true}>
   From my previous work experience, employers look more for relevant skills and industry
   knowledge over the type of degree or the majors and minors you study. The mentorship I
   gained from those jobs was what influenced me to change my degree over, and to not
   choose a major.
-</p>
-<p class="p-5 mx-auto text-xl max-w-3xl">
+</TextContent>
+<TextContent>
   As time has progressed, my goals and ambitions have also adapted. Initially, I wanted to
   be a systems administrator. Upon reaching that goal, I shifted my gaze to what I wanted
   to do work towards, setting on cybersecurity. Given that the industry is ever-changing,
   I felt it appropriate to not hem myself in to a single major or minor.
-</p>
+</TextContent>
 
 <h1 class="my-6 text-6xl text-center text-base-content font-bold">Skills</h1>
