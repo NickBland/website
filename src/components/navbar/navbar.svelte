@@ -3,9 +3,7 @@
   import Menu from "lucide-svelte/icons/menu";
 </script>
 
-<div
-  class="navbar bg-base-300 dark:bg-neutral rounded-box mt-1 dark:text-neutral-content"
->
+<div class="navbar bg-neutral text-neutral-content">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -13,18 +11,20 @@
       </div>
       <ul
         tabindex="-1"
-        class="tablist menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-300 dark:bg-neutral rounded-box w-52 dark:text-neutral-content"
+        class="tablist menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-neutral rounded-box w-52 text-neutral-content"
       >
         <li><a href="/">Home</a></li>
         <li><a href="/portfolio">Portfolio</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl" href="/">nickbland.dev</a>
+    <a class="btn btn-ghost text-xl hover:shadow-lg" href="/">nickbland.dev</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
-      <li><a href="/" class="text-lg">Home</a></li>
-      <li><a href="/portfolio" class="text-lg">Portfolio</a></li>
+      <li><a href="/" class="btn btn-ghost text-lg hover:shadow-lg">Home</a></li>
+      <li>
+        <a href="/portfolio" class="btn btn-ghost text-lg hover:shadow-lg">Portfolio</a>
+      </li>
     </ul>
   </div>
   <div class="navbar-end">

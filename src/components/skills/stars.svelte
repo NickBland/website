@@ -9,9 +9,9 @@
 <div class="flex">
   {#each Array(count) as _}
     <!-- Need to use the var somewhere -->
-    <Star name={_} class="stroke-base-content fill-base-content" />
+    <Star name={_} class="stroke-neutral-content fill-neutral-content" />
   {/each}
   {#if half}
-    <HalfStar class="stroke-base-content fill-base-content" />
+    <HalfStar class="stroke-neutral-content fill-neutral-content" />
   {/if}
 </div>

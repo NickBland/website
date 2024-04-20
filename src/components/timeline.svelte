@@ -6,7 +6,7 @@
 <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical pb-8">
   <li>
     <div class="timeline-middle"><Circle class="fill-base-300" /></div>
-    <div class="timeline-end timeline-box bg-base-300 mb-10 max-w-3xl">
+    <div class="timeline-end timeline-box bg-base-300 mb-10 max-w-3xl shadow-lg">
       <time class="font-mono" datetime="2020-3">Mar 2020 - Jul 2020</time>
       <div class="text-xl">Villanova College</div>
       <div class="text-sm">Information Technology Officer</div>
@@ -46,7 +46,7 @@
   <li>
     <hr />
     <div class="timeline-middle"><Circle class="fill-base-300" /></div>
-    <div class="timeline-start timeline-box bg-base-300 mb-10 max-w-3xl">
+    <div class="timeline-start timeline-box bg-base-300 mb-10 max-w-3xl shadow-lg">
       <div class="md:text-end">
         <time class="font-mono" datetime="2020-8">Aug 2020 - Oct 2022</time>
         <div class="text-xl">St Pauls School</div>
@@ -86,7 +86,7 @@
   <li>
     <hr />
     <div class="timeline-middle"><Circle class="fill-base-300" /></div>
-    <div class="timeline-end timeline-box bg-base-300 max-w-3xl">
+    <div class="timeline-end timeline-box bg-base-300 max-w-3xl shadow-lg">
       <time class="font-mono" datetime="2022-10">Oct 2022 - Feb 2023</time>
       <div class="text-xl">St Pauls School</div>
       <div class="text-sm pb-2">System Administrator</div>
