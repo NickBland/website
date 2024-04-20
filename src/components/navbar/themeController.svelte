@@ -7,7 +7,7 @@
   <!-- this hidden checkbox controls the state -->
   <input type="checkbox" class="theme-controller" value="winter" />
 
-  <Sun class="w-7 h-7 swap-on fill-current" />
+  <Sun class="w-7 h-7 swap-on fill-current hover:shadow-lg" />
 
-  <Moon class="w-7 h-7 swap-off fill-current" />
+  <Moon class="w-7 h-7 swap-off fill-current hover:shadow-lg" />
 </label>

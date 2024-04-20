@@ -17,12 +17,14 @@
         <li><a href="/portfolio">Portfolio</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl" href="/">nickbland.dev</a>
+    <a class="btn btn-ghost text-xl hover:shadow-lg" href="/">nickbland.dev</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
-      <li><a href="/" class="text-lg">Home</a></li>
-      <li><a href="/portfolio" class="text-lg">Portfolio</a></li>
+      <li><a href="/" class="btn btn-ghost text-lg hover:shadow-lg">Home</a></li>
+      <li>
+        <a href="/portfolio" class="btn btn-ghost text-lg hover:shadow-lg">Portfolio</a>
+      </li>
     </ul>
   </div>
   <div class="navbar-end">
