@@ -111,7 +111,7 @@
       <ul class="list-disc list-inside mt-2">
         <li>There is always something to be improved upon if you look hard enough.</li>
         <li>
-          Gained much more experience in deploying Autotune and Intune, as well as how
+          Gained significant experience in deploying Autotune and Intune, as well as how
           AzureAD works under the hood.
         </li>
       </ul>
