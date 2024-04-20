@@ -1,5 +1,6 @@
 <script>
   import ThemeController from "./themeController.svelte";
+  import Menu from "lucide-svelte/icons/menu";
 </script>
 
 <div
@@ -8,18 +9,7 @@
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="w-5 h-5"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-            clip-rule="evenodd"
-          />
-        </svg>
+        <Menu class="w-5 h-5 fill-current" />
       </div>
       <ul
         tabindex="-1"

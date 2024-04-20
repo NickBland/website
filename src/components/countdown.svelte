@@ -81,7 +81,7 @@
     </div>
   </div>
 {:else}
-  <h3 class="p-5 text-4xl text-center">Time to Graduation<br /> {FORMATTED}</h3>
+  <h3 class="p-5 text-4xl text-center">Time to Graduation<br /> ({FORMATTED})</h3>
   <span class="flex countdown pb-5 font-mono text-4xl justify-center">
     <span style="--value:{years};"></span>y
     <span style="--value:{months};"></span>m

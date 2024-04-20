@@ -2,6 +2,8 @@
   import Divider from "../../components/divider.svelte";
   import Countdown from "../../components/countdown.svelte";
   import TextContent from "../../components/textContent.svelte";
+  import Skills from "../../components/skills.svelte";
+  import Timeline from "../../components/timeline.svelte";
 </script>
 
 <div
@@ -11,10 +13,10 @@
   <div class="hero-content text-left text-accent-content flex-col lg:flex-row">
     <div class="skeleton w-48 h-64 shadow-2xl max-w-sm"></div>
     <div>
-      <h1 class="mb-6 text-6xl font-bold">
-        Hello,<br /> my name is Nick
+      <h1 class="mb-6 text-6xl font-bold text-wrap text-center text-primary-content">
+        Hello, my name is Nick
       </h1>
-      <p class="py-5 text-lg max-w-sm">
+      <p class="py-5 text-lg max-w-fit text-center text-primary-content">
         I am an IT Student at Griffith University with a passion for developing neat
         things.
       </p>
@@ -58,4 +60,13 @@
   I felt it appropriate to not hem myself in to a single major or minor.
 </TextContent>
 
-<h1 class="my-6 text-6xl text-center text-base-content font-bold">Skills</h1>
+<h1 class="my-6 text-6xl p-5 text-center text-base-content font-bold">Skills</h1>
+<Skills />
+<TextContent>
+  While this isn't an exhaustive list of all my skills, it is a brief list of skills I
+  wished to highlight. Please see the next section for detailed information on how I have
+  utilised these skills in other workplaces.
+</TextContent>
+
+<h1 class="my-6 text-6xl p-5 text-center text-base-content font-bold">Experiences</h1>
+<Timeline />
