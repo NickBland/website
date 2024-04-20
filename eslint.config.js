@@ -32,6 +32,7 @@ export default tsEslint.config(
       "**/build",
       "**/node_modules",
       "**/package",
+      "**/app.d.ts",
     ],
   },
 );
