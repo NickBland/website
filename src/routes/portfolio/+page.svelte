@@ -60,7 +60,9 @@
   I felt it appropriate to not hem myself in to a single major or minor.
 </TextContent>
 
-<h1 class="my-6 text-6xl p-5 text-center text-base-content font-bold">Skills</h1>
+<h1 class="my-6 text-6xl p-5 text-center text-base-content font-bold">
+  Skills & Confidence
+</h1>
 <Skills />
 <TextContent>
   While this isn't an exhaustive list of all my skills, it is a brief list of skills I
@@ -70,3 +72,43 @@
 
 <h1 class="my-6 text-6xl p-5 text-center text-base-content font-bold">Experiences</h1>
 <Timeline />
+<h3 class="p-5 text-4xl text-center">Informal Experience</h3>
+<TextContent>
+  Griffith University has also been helpful in engaging me with industry panels and
+  experiences. In early 2024, one of my units had a panel with some industry experts who
+  discussed what the future of the IT industry would look like. Coming away from that
+  panel, I felt better about the path I had taken. The experts all agreed that the
+  industry is an ever-changing field, so it really doesn't make sense to stay comfortable
+  with a single expertise.
+</TextContent>
+<TextContent middle={true}>
+  Another extracurricular activity I undertook was the 2023 'James-Jam'. In this activity,
+  groups were formed and given two weeks to construct a working game in p5play.js. The
+  theme was a game remniscient of Homeworld (1999). While this wasn't a competition, our
+  group did an amazing job at constructing a fully working game. You can play the game at
+  <a class="link" href="https://gamejam2023.nickbland.dev/">this link here</a>. And if you
+  want to view the source code, it can be found
+  <a class="link" href="https://github.com/NickBland">on my GitHub</a>.
+</TextContent>
+<TextContent middle={true} classes={"pt-5"}>
+  Outside of work experience and university, I also aim to learn new projects in my own
+  time. For example, the website you are reading this on was built by hand by me. You can
+  find the source code for this project, and others at my personal <a
+    class="link"
+    href="https://git.nickbland.dev">GitLab instance here</a
+  >
+  or my <a class="link" href="https://github.com/NickBland">GitHub here</a>.
+</TextContent>
+<TextContent middle={true} classes={"pt-5"}>
+  On top of that, I also have my own homelab setup. Utilising Proxmox, I run hosts and
+  containers for various services that both me, and my friends and family enjoy. For a
+  list of services that I am running, you can visit my <a
+    class="link"
+    href="https://status.nickbland.dev/">AWS-hosted status page here</a
+  >.
+</TextContent>
+<TextContent>
+  The homelab is a constantly evolving project that has given enabled me to self-teach
+  myself aspects of linux administration in a safer environment. In the future, I may have
+  a blog with some of the more interesting projects I've worked on.
+</TextContent>
