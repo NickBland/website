@@ -1,9 +1,9 @@
-<script>
-  import Divider from "../../components/portfolio/divider.svelte";
-  import Countdown from "../../components/portfolio/countdown.svelte";
-  import TextContent from "../../components/portfolio/textContent.svelte";
-  import Skills from "../../components/portfolio/skills.svelte";
-  import Timeline from "../../components/portfolio/timeline.svelte";
+<script lang="ts">
+  import Divider from "$lib/components/portfolio/divider.svelte";
+  import Countdown from "$lib/components/portfolio/countdown.svelte";
+  import TextContent from "$lib/components/portfolio/textContent.svelte";
+  import Skills from "$lib/components/portfolio/skills.svelte";
+  import Timeline from "$lib/components/portfolio/timeline.svelte";
 </script>
 
 <div
@@ -11,7 +11,11 @@
 >
   <div class="hero-overlay bg-opacity-30"></div>
   <div class="hero-content text-left text-accent-content flex-col lg:flex-row">
-    <div class="skeleton w-48 h-64 shadow-2xl max-w-sm"></div>
+    <img
+      class=" skeleton w-48 h-64 shadow-2xl max-w-sm rounded-2xl"
+      alt="what i look like!"
+      src="https://cdn.nickbland.dev/nickbland%2Fstatic%2Fimages%2Fprofile.webp"
+    />
     <div>
       <h1 class="mb-6 text-6xl font-bold text-wrap text-center text-primary-content">
         Hello, my name is Nick

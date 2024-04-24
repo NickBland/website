@@ -1,7 +1,7 @@
 <script lang="ts">
   import "../app.css";
-  import Navbar from "../components/navbar/navbar.svelte";
-  import Footer from "../components/footer.svelte";
+  import Navbar from "$lib/components/navbar/navbar.svelte";
+  import Footer from "$lib/components/footer.svelte";
 </script>
 
 <Navbar />

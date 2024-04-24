@@ -8,8 +8,8 @@ declare global {
       message: string;
     }
     // interface Locals {}
-    // interface PageData {}
-    // interface PageState {}
+    interface PageData {}
+    interface PageState {}
     interface Platform {
       env: {
         COUNTER: DurableObjectNamespace;
