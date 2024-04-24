@@ -2,7 +2,6 @@
   import Stars from "./skills/stars.svelte";
 </script>
 
-<!-- Icons on this site have been designed using images from Flaticon.com -->
 <div
   class="m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-center justify-items-center gap-5 p-5 md:max-w-4xl lg:min-w-max"
 >
