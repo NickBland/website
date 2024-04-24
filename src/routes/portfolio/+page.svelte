@@ -1,9 +1,9 @@
 <script>
-  import Divider from "../../components/divider.svelte";
-  import Countdown from "../../components/countdown.svelte";
-  import TextContent from "../../components/textContent.svelte";
-  import Skills from "../../components/skills.svelte";
-  import Timeline from "../../components/timeline.svelte";
+  import Divider from "../../components/portfolio/divider.svelte";
+  import Countdown from "../../components/portfolio/countdown.svelte";
+  import TextContent from "../../components/portfolio/textContent.svelte";
+  import Skills from "../../components/portfolio/skills.svelte";
+  import Timeline from "../../components/portfolio/timeline.svelte";
 </script>
 
 <div
