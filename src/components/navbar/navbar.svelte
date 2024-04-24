@@ -6,7 +6,12 @@
 <div class="navbar bg-neutral text-neutral-content">
   <div class="navbar-start">
     <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+      <div
+        tabindex="0"
+        role="button"
+        aria-label="menu button"
+        class="btn btn-ghost lg:hidden"
+      >
         <Menu class="w-5 h-5 fill-current" />
       </div>
       <ul

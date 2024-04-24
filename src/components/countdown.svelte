@@ -41,7 +41,7 @@
 
 <!-- Display a different type of countdown for smaller screens, as larger one won't fit -->
 {#if w >= 768}
-  <h3 class="p-5 text-4xl text-center">Time to Graduation</h3>
+  <h2 class="p-5 text-4xl text-center">Time to Graduation</h2>
   <div class="grid grid-flow-col gap-5 pb-5 text-center auto-cols-max justify-center">
     <div class="flex flex-col">
       <span class="countdown font-mono text-5xl place-self-center">
@@ -81,7 +81,7 @@
     </div>
   </div>
 {:else}
-  <h3 class="p-5 text-4xl text-center">Time to Graduation<br /> ({FORMATTED})</h3>
+  <h2 class="p-5 text-4xl text-center">Time to Graduation<br /> ({FORMATTED})</h2>
   <span class="flex countdown pb-5 font-mono text-4xl justify-center">
     <span style="--value:{years};"></span>y&nbsp;
     <span style="--value:{months};"></span>m&nbsp;

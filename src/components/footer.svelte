@@ -18,6 +18,7 @@
       <a
         role="button"
         class="btn btn-ghost hover:shadow-lg"
+        aria-label="Find me at my GitHub"
         href="https://github.com/NickBland"><Github /></a
       >
     </div>
@@ -25,6 +26,7 @@
       <a
         role="button"
         class="btn btn-ghost hover:shadow-lg"
+        aria-label="Find me at my GitLab"
         href="https://git.nickbland.dev/NickBland"><Gitlab /></a
       >
     </div>

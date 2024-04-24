@@ -112,3 +112,10 @@
   myself aspects of linux administration in a safer environment. In the future, I may have
   a blog with some of the more interesting projects I've worked on.
 </TextContent>
+
+<h1 class="my-6 text-6xl p-5 text-center text-base-content font-bold">Contact</h1>
+<TextContent>
+  Thanks for checking out my site, if you want to get in contact with me, you can find me
+  on <a class="link" href="https://github.com/NickBland">GitHub</a>, or send an email to
+  <a class="link" href="mailto:hello@nickbland.dev">hello@nickbland.dev</a>.
+</TextContent>
