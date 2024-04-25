@@ -1,4 +1,5 @@
 <script lang="ts">
+  import SkeletonImage from "$lib/components/portfolio/skeletonImage.svelte";
   import Divider from "$lib/components/portfolio/divider.svelte";
   import Countdown from "$lib/components/portfolio/countdown.svelte";
   import TextContent from "$lib/components/portfolio/textContent.svelte";
@@ -11,11 +12,7 @@
 >
   <div class="hero-overlay bg-opacity-30"></div>
   <div class="hero-content text-left text-accent-content flex-col lg:flex-row">
-    <img
-      class=" skeleton w-48 h-64 shadow-2xl max-w-sm rounded-2xl"
-      alt="what i look like!"
-      src="https://cdn.nickbland.dev/nickbland%2Fstatic%2Fimages%2Fprofile.webp"
-    />
+    <SkeletonImage src="https://cdn.nickbland.dev/nickbland%2Fstatic%2Fimages%2Fprofile.webp" altText="Profile of me." />
     <div>
       <h1 class="mb-6 text-6xl font-bold text-wrap text-center text-primary-content">
         Hello, my name is Nick
