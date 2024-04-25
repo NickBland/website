@@ -12,7 +12,10 @@
 >
   <div class="hero-overlay bg-opacity-30"></div>
   <div class="hero-content text-left text-accent-content flex-col lg:flex-row">
-    <SkeletonImage src="https://cdn.nickbland.dev/nickbland%2Fstatic%2Fimages%2Fprofile.webp" altText="Profile of me." />
+    <SkeletonImage
+      src="https://cdn.nickbland.dev/nickbland%2Fstatic%2Fimages%2Fprofile.webp"
+      altText="Profile of me."
+    />
     <div>
       <h1 class="mb-6 text-6xl font-bold text-wrap text-center text-primary-content">
         Hello, my name is Nick
@@ -29,8 +32,9 @@
 
 <h1 class="my-6 text-6xl text-center text-base-content font-bold">About Me</h1>
 <TextContent>
-  Since 2014, I've had an interest in programming and making things. I've made this
-  portfolio as a place for me to collate and show off some of the work that I've done.
+  Since 2014, I've had an interest in programming and making things. This portfolio serves
+  as a place for me to collate and show off some of the work that I've done and
+  experiences I've had.
 </TextContent>
 <TextContent>
   At the moment, I've returned back to Uni to finish my degree after achieving a point in
@@ -45,31 +49,32 @@
 </h1>
 <Skills />
 <TextContent>
-  While this isn't an exhaustive list of all my skills, it is a brief list of skills I
-  wished to highlight. Please see the next section for detailed information on how I have
-  utilised these skills in other workplaces.
+  While this isn't an exhaustive list of all my skills, it is a brief list of skills and
+  interests I wished to highlight.
 </TextContent>
 
 <h1 class="my-6 text-6xl text-center text-base-content font-bold">Education & Goals</h1>
 <Countdown />
 <TextContent>
-  I am currently studying a Bachelor of Information Technology at Griffith University,
-  opting for a no major or minor option. Having previously studied Computer Science at QUT
-  from 2019-2021, I decided to take a break from study and focus on work experience. As of
-  2023, I returned to studying at Griffith using the experiences I gained from both QUT
-  and from work.
+  As of 2023, I have returned to studying a Bachelor of Information Technology at Griffith
+  University using the experiences I gained from both QUT and work environments. Having
+  previously studied Computer Science at QUT from 2019-2021, I gained critical knowledge
+  on how computers worked at a low-level, and other concepts such as networking. Following
+  the COVID pandemic, I decided to take a break from studying to pursue getting hands-on
+  experience in work environments.
 </TextContent>
 <TextContent middle={true}>
-  From my previous work experience, employers look more for relevant skills and industry
-  knowledge over the type of degree or the majors and minors you study. The mentorship I
-  gained from those jobs was what influenced me to change my degree over, and to not
-  choose a major.
+  From my previous work experience, I found that employers look more for relevant skills
+  and industry knowledge over the type of degree or the majors and minors you study. The
+  mentorship I gained from those jobs was what influenced me to change my degree over from
+  Computer Science, and opt for the no major or minor route.
 </TextContent>
 <TextContent>
   As time has progressed, my goals and ambitions have also adapted. Initially, I wanted to
-  be a systems administrator. Upon reaching that goal, I shifted my gaze to what I wanted
-  to do work towards, setting on cybersecurity. Given that the industry is ever-changing,
-  I felt it appropriate to not hem myself in to a single major or minor.
+  be a systems administrator. But upon reaching that goal, I shifted my gaze to another
+  long-held interest: cybersecurity. Given that the industry is ever-changing, I felt it
+  appropriate to not hem myself in to a single major or minor, and to focus on the bigger
+  picture the IT industry presents.
 </TextContent>
 
 <h1 class="my-6 text-6xl p-5 text-center text-base-content font-bold">Experiences</h1>
@@ -78,10 +83,10 @@
 <TextContent>
   Griffith University has also been helpful in engaging me with industry panels and
   experiences. In early 2024, one of my units had a panel with some industry experts who
-  discussed what the future of the IT industry would look like. Coming away from that
-  panel, I felt better about the path I had taken. The experts all agreed that the
-  industry is an ever-changing field, so it really doesn't make sense to stay comfortable
-  with a single expertise.
+  discussed what they thought the future of the IT industry would look like. Between talks
+  of AI, and other new technologies, I came away from that panel feeling better about the
+  path I had taken. All the experts agreed that the IT industry is a constantly changing
+  field, and that standing still is the worst mistake you can make as a newcomer.
 </TextContent>
 <TextContent middle={true}>
   Another extracurricular activity I undertook was the 2023 'James-Jam'. In this activity,
@@ -94,7 +99,7 @@
 </TextContent>
 <TextContent middle={true} classes={"pt-5"}>
   Outside of work experience and university, I also aim to learn new projects in my own
-  time. For example, the website you are reading this on was built by hand by me. You can
+  time. For example, the website you are reading this on was built by hand, by me. You can
   find the source code for this project, and others at my personal <a
     class="link"
     href="https://git.nickbland.dev">GitLab instance here</a
@@ -102,17 +107,17 @@
   or my <a class="link" href="https://github.com/NickBland">GitHub here</a>.
 </TextContent>
 <TextContent middle={true} classes={"pt-5"}>
-  On top of that, I also have my own homelab setup. Utilising Proxmox, I run hosts and
-  containers for various services that both me, and my friends and family enjoy. For a
-  list of services that I am running, you can visit my <a
+  Moreover, I also have my own homelab setup. Utilising Proxmox, I use Proxmox to run
+  virtual machines and containers for various services that I use for myself and my
+  friends. For a list of services that I am running, you can visit my <a
     class="link"
     href="https://status.nickbland.dev/">AWS-hosted status page here</a
   >.
 </TextContent>
 <TextContent>
-  The homelab is a constantly evolving project that has given enabled me to self-teach
-  myself aspects of linux administration in a safer environment. In the future, I may have
-  a blog with some of the more interesting projects I've worked on.
+  The homelab is a constantly evolving project that has enabled me to self-teach myself
+  aspects of linux administration in a safer environment. In the future, I may have a blog
+  with some of the more interesting projects I've worked on.
 </TextContent>
 
 <h1 class="my-6 text-6xl p-5 text-center text-base-content font-bold">Contact</h1>
