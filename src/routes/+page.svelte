@@ -26,7 +26,7 @@
         cybersecurity. At the moment, I'm a student at Griffith University.
       </p>
     </div>
-    <div class="hidden lg:flex divider divider-horizontal divider-start">Scoll</div>
+    <div class="hidden lg:flex divider divider-horizontal divider-start">Scroll</div>
   </div>
 </div>
 
