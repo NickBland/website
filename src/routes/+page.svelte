@@ -102,7 +102,7 @@
   time. For example, the website you are reading this on was built by hand, by me. You can
   find the source code for this project, and others at my personal <a
     class="link"
-    href="https://git.nickbland.dev">GitLab instance here</a
+    href="https://git.nickbland.dev">Gitea instance here</a
   >
   or my <a class="link" href="https://github.com/NickBland">GitHub here</a>.
 </TextContent>
