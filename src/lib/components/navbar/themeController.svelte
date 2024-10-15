@@ -8,7 +8,7 @@
   <input
     type="checkbox"
     class="theme-controller"
-    value="winter"
+    value="fantasy"
     aria-label="Theme toggle button"
   />
 
