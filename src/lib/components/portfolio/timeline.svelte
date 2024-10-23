@@ -12,7 +12,7 @@
       <time class="font-mono" datetime="2020-3">Mar 2020 - Jul 2020</time>
       <div class="text-xl">Villanova College</div>
       <div class="text-sm">Information Technology Officer</div>
-      <div class="divider my-1" />
+      <div class="divider my-1"></div>
       Help Desk Role:
       <ul class="list-disc list-inside mt-2">
         <li>Performed repairs and troubleshooting for both students and teachers.</li>
@@ -29,7 +29,7 @@
           configuration throughout school.
         </li>
       </ul>
-      <div class="divider my-1" />
+      <div class="divider my-1"></div>
       Key Experiences and Takeaways:
       <ul class="list-disc list-inside mt-2">
         <li>Became more comfortable and confident in an end-user facing role.</li>
@@ -56,7 +56,7 @@
         <div class="text-xl">St Pauls School</div>
         <div class="text-sm pb-2">Information Technology Officer</div>
       </div>
-      <div class="divider my-1" />
+      <div class="divider my-1"></div>
       Help Desk Role:
       <ul class="list-disc list-inside mt-2">
         <li>
@@ -71,7 +71,7 @@
           Gained more experience in Azure ecosystem, SCCM deployment, and networking.
         </li>
       </ul>
-      <div class="divider my-1" />
+      <div class="divider my-1"></div>
       Key Experiences and Takeaways:
       <ul class="list-disc list-inside mt-2">
         <li>Working in a larger group to cover more ground</li>
@@ -96,7 +96,7 @@
       <time class="font-mono" datetime="2022-10">Oct 2022 - Feb 2023</time>
       <div class="text-xl">St Pauls School</div>
       <div class="text-sm pb-2">System Administrator</div>
-      <div class="divider my-1" />
+      <div class="divider my-1"></div>
       System Administrator Role:
       <ul class="list-disc list-inside mt-2">
         <li>
@@ -112,7 +112,7 @@
           importing new users into TASS and AD.
         </li>
       </ul>
-      <div class="divider my-1" />
+      <div class="divider my-1"></div>
       Key Experiences and Takeaways:
       <ul class="list-disc list-inside mt-2">
         <li>There is always something to be improved upon if you look hard enough.</li>

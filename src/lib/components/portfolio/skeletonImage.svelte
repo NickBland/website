@@ -1,9 +1,13 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  export let src: string;
-  export let altText: string = "";
+  interface Props {
+    src: string;
+    altText?: string;
+  }
 
-  let loaded = false;
+  let { src, altText = "" }: Props = $props();
+
+  let loaded = $state(false);
 
   onMount(() => {
     const img = new Image();
@@ -18,5 +22,5 @@
 {#if loaded}
   <img {src} class="w-48 h-64 shadow-2xl max-w-sm rounded-2xl" alt={altText} />
 {:else}
-  <div class="skeleton w-48 h-64 shadow-2xl max-w-sm rounded-2xl" />
+  <div class="skeleton w-48 h-64 shadow-2xl max-w-sm rounded-2xl"></div>
 {/if}
