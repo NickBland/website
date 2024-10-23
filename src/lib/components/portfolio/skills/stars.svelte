@@ -2,8 +2,12 @@
   import Star from "lucide-svelte/icons/star";
   import HalfStar from "lucide-svelte/icons/star-half";
 
-  export let count: number = 5;
-  export let half: boolean = false;
+  interface Props {
+    count?: number;
+    half?: boolean;
+  }
+
+  let { count = 5, half = false }: Props = $props();
 </script>
 
 <div class="flex">

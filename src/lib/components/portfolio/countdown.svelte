@@ -1,21 +1,21 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  let w: number = 0; // Width of the screen, using the svelte binding
+  let w: number = $state(0); // Width of the screen, using the svelte binding
 
   const GRADUATION = new Date(1753797600000).valueOf();
   const FORMATTED = new Date(1753797600000).toDateString();
   let interval: ReturnType<typeof setInterval>;
 
-  let timeTo = Math.abs(GRADUATION - Date.now().valueOf()) / 1000;
+  let timeTo = $state(Math.abs(GRADUATION - Date.now().valueOf()) / 1000);
 
   // Calculate time remaining from milliseconds to graduation (30 Jul, 2025)
-  $: years = Math.floor(timeTo / 31556926);
-  $: months = Math.floor(timeTo / 2629743) % 12;
-  $: days = Math.floor(timeTo / 86400) % 30;
-  $: hours = Math.floor(timeTo / 3600) % 24;
-  $: minutes = Math.floor(timeTo / 60) % 60;
-  $: seconds = Math.floor(timeTo % 60);
+  let years = $derived(Math.floor(timeTo / 31556926));
+  let months = $derived(Math.floor(timeTo / 2629743) % 12);
+  let days = $derived(Math.floor(timeTo / 86400) % 30);
+  let hours = $derived(Math.floor(timeTo / 3600) % 24);
+  let minutes = $derived(Math.floor(timeTo / 60) % 60);
+  let seconds = $derived(Math.floor(timeTo % 60));
 
   // Update the timeTo variable every 1000 milliseconds
   // Don't go past 0 though! Stop the updates afterwards
