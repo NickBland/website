@@ -6,8 +6,8 @@
 >
   <defs>
     <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="oooscillate-grad">
-      <stop style="stop-color:oklch(var(--p))" stop-opacity="1" offset="0%"></stop>
-      <stop style="stop-color:oklch(var(--a))" stop-opacity="1" offset="100%"></stop>
+      <stop style="stop-color:var(--color-primary)" stop-opacity="1" offset="0%"></stop>
+      <stop style="stop-color:var(--color-accent)" stop-opacity="1" offset="100%"></stop>
     </linearGradient>
   </defs>
   <g stroke-width="4" stroke="url(#oooscillate-grad)" fill="none" stroke-linecap="round">

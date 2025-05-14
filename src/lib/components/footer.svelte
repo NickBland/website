@@ -1,14 +1,15 @@
-<footer class="footer items-center py-4 bg-neutral text-neutral-content">
+<footer
+  class="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4"
+>
   <aside class="items-center grid-flow-col mx-2">
     <a class="btn text-xl btn-ghost" href="/">nickbland.dev</a>
     <p>
-      Copyright © 2024 - All right reserved | <a
-        class="link"
-        href="https://git.nickbland.dev/NickBland/website-2">Source Code</a
-      > | Made with ❤️ using SvelteKit
+      Copyright © {new Date().getFullYear()} - All right reserved |
+      <a class="link" href="https://git.nickbland.dev/NickBland/website-2">Source Code</a>
+      | Made with ❤️ using SvelteKit
     </p>
   </aside>
-  <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end mx-2">
+  <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
     <div class="tooltip" data-tip="GitHub">
       <a
         role="button"
