@@ -8,7 +8,7 @@
   <input
     type="checkbox"
     class="theme-controller"
-    value="fantasy"
+    value="cmyk"
     aria-label="Theme toggle button"
   />
 

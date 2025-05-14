@@ -7,9 +7,7 @@
   import Timeline from "$lib/components/portfolio/timeline.svelte";
 </script>
 
-<div
-  class="hero height-minus-nav bg-gradient-to-br from-primary from-10% to-accent to-80%"
->
+<div class="hero height-minus-nav bg-linear-to-br from-primary from-10% to-accent to-80%">
   <div class="hero-overlay bg-opacity-30"></div>
   <div class="hero-content text-left text-accent-content flex-col lg:flex-row">
     <SkeletonImage
@@ -111,7 +109,7 @@
   virtual machines and containers for various services that I use for myself and my
   friends. For a list of services that I am running, you can visit my <a
     class="link"
-    href="https://status.nickbland.dev/">AWS-hosted status page here</a
+    href="https://status.nickbland.dev/">Digital Ocean-hosted status page here</a
   >.
 </TextContent>
 <TextContent>
