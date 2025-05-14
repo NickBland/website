@@ -56,8 +56,17 @@
   <li>
     <hr class="bg-neutral-content" />
     <div class="timeline-middle"><Circle class="fill-neutral" /></div>
+    <div class="timeline-end timeline-box bg-neutral mb-10 max-w-3xl shadow-lg text-neutral-content text-base">
+      <time class="font-mono" datetime="2023-07">Jul 2023</time>
+      <div class="text-xl">Back to University</div>
+    </div>
+    <hr class="bg-neutral-content" />
+  </li>
+  <li>
+    <hr class="bg-neutral-content" />
+    <div class="timeline-middle"><Circle class="fill-neutral" /></div>
     <div
-      class="timeline-end timeline-box bg-neutral mb-10 max-w-3xl shadow-lg text-neutral-content text-base"
+      class="timeline-start timeline-box bg-neutral mb-10 max-w-3xl shadow-lg text-neutral-content text-base"
     >
       <time class="font-mono" datetime="2022-10">Oct 2022 - Feb 2023</time>
       <div class="text-xl">St Pauls School</div>
@@ -94,7 +103,7 @@
     <hr class="bg-neutral-content" />
     <div class="timeline-middle"><Circle class="fill-neutral" /></div>
     <div
-      class="timeline-start timeline-box bg-neutral mb-10 max-w-3xl shadow-lg text-neutral-content text-base"
+      class="timeline-end timeline-box bg-neutral mb-10 max-w-3xl shadow-lg text-neutral-content text-base"
     >
       <div class="md:text-end">
         <time class="font-mono" datetime="2020-8">Aug 2020 - Oct 2022</time>
@@ -136,7 +145,7 @@
     <hr class="bg-neutral-content" />
     <div class="timeline-middle"><Circle class="fill-neutral" /></div>
     <div
-      class="timeline-end timeline-box bg-neutral max-w-3xl shadow-lg text-neutral-content text-base"
+      class="timeline-start timeline-box bg-neutral max-w-3xl shadow-lg text-neutral-content text-base"
     >
       <time class="font-mono" datetime="2020-3">Mar 2020 - Jul 2020</time>
       <div class="text-xl">Villanova College</div>
